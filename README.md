@@ -15,14 +15,18 @@ A collaborative Maven repo hosted by GitHub
 ## Using this repo
 * Add the following block to your pom.xml, inside the <project> tag (I usually put it after </build>)
 
+```
     <distributionManagement>
         <repository>
             <id>collab-repo</id>
             <url>http://blha303.github.io/repo/</url>
         </repository>
     </distributionManagement>
+```
 
 * Add a dependency as usual:
+
+```
     <dependencies>
         <dependency>
             <groupId>a.super.cool.dep</groupId>
@@ -30,5 +34,6 @@ A collaborative Maven repo hosted by GitHub
             <version>1.33.7</version>
         </dependency>
     </dependencies>
+```
 
 If you have any questions, create an issue.
