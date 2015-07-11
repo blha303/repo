@@ -5,9 +5,9 @@ A collaborative Maven repo hosted by GitHub
 * Get a jar, by compiling it or whatever.
 * Install maven if you haven't already.
 * Find the package, name and version number by looking at the MANIFEST inside the jar if available
-* `mvn deploy -DaltDeploymentRepository=snapshot-repo::default::file:/path/to/repo`
 * Fork the repo using the button above
 * Add your fork as a new remote. `git remote add mine https://github.com/USERNAME/repo`
+* `mvn deploy -DaltDeploymentRepository=snapshot-repo::default::file:/path/to/repo`
 * Commit and push your changes. `git add .; git commit -a -m "Adding NAME by PERSON"; git push mine gh-pages`
 * Create a pull request, and I'll check and pull the new artifacts.
 
