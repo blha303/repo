@@ -1,0 +1,11 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Jul 02 08:01:42 PDT 2013
+https\://dl.dropboxusercontent.com/u/55730138/sonatype-work/releases/.lastUpdated=1372747035618
+http\://repo.maven.apache.org/maven2/.lastUpdated=1372777302241
+http\://repo.bukkit.org/content/repositories/snapshots/.lastUpdated=1372777301912
+http\://repo.maven.apache.org/maven2/.error=
+http\://repo.bukkit.org/content/groups/public/.error=
+http\://repo.bukkit.org/content/repositories/snapshots/.error=
+default-http\://localhost\:8081/nexus/content/repositories/releases/.lastUpdated=1372747034781
+http\://repo.bukkit.org/content/groups/public/.lastUpdated=1372777302095
+http\://localhost\:8081/nexus/content/repositories/releases/.error=Could not transfer artifact net.milkbowl.vault\:Vault\:pom\:1.2.23 from/to releases (http\://localhost\:8081/nexus/content/repositories/releases)\: Connection to http\://localhost\:8081 refused

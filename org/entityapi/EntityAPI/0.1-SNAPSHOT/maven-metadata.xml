@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.entityapi</groupId>
+  <artifactId>EntityAPI</artifactId>
+  <version>0.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20141224.000407</timestamp>
+      <buildNumber>53</buildNumber>
+    </snapshot>
+    <lastUpdated>20141224000407</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.1-20141224.000407-53</value>
+        <updated>20141224000407</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.1-20141224.000407-53</value>
+        <updated>20141224000407</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>javadoc</classifier>
+        <extension>jar</extension>
+        <value>0.1-20140830.061708-47</value>
+        <updated>20140830061708</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

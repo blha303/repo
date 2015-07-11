@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.dsh105</groupId>
+  <artifactId>PowerMessage</artifactId>
+  <version>1.0.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20150409.004206</timestamp>
+      <buildNumber>15</buildNumber>
+    </snapshot>
+    <lastUpdated>20150409004206</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.0.1-20150409.004206-15</value>
+        <updated>20150409004206</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0.1-20150409.004206-15</value>
+        <updated>20150409004206</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>javadoc</classifier>
+        <extension>jar</extension>
+        <value>1.0.1-20141002.055044-8</value>
+        <updated>20141002055044</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

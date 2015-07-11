@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Thu Jun 27 19:51:48 PDT 2013
+SpecialSource-1.6-SNAPSHOT.jar>sonatype-nexus-snapshots=
+SpecialSource-1.6-SNAPSHOT-shaded.jar>sonatype-nexus-snapshots=
+SpecialSource-1.6-SNAPSHOT.pom>sonatype-nexus-snapshots=
+SpecialSource-1.6-SNAPSHOT.jar>=

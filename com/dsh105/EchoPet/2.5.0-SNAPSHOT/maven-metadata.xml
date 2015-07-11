@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.dsh105</groupId>
+  <artifactId>EchoPet</artifactId>
+  <version>2.5.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20141001.040659</timestamp>
+      <buildNumber>11</buildNumber>
+    </snapshot>
+    <lastUpdated>20141001040659</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>2.5.0-20141001.040659-11</value>
+        <updated>20141001040659</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>2.5.0-20141001.040659-11</value>
+        <updated>20141001040659</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.entityapi</groupId>
+  <artifactId>EntityAPI-API</artifactId>
+  <versioning>
+    <release>API</release>
+    <versions>
+      <version>API</version>
+    </versions>
+    <lastUpdated>20141224000423</lastUpdated>
+  </versioning>
+</metadata>

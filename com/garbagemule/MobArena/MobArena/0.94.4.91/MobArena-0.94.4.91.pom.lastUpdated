@@ -1,0 +1,11 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Jul 02 08:01:44 PDT 2013
+https\://dl.dropboxusercontent.com/u/55730138/sonatype-work/releases/.lastUpdated=1372747050981
+http\://repo.maven.apache.org/maven2/.lastUpdated=1372777304957
+http\://repo.bukkit.org/content/repositories/snapshots/.lastUpdated=1372777304612
+http\://repo.maven.apache.org/maven2/.error=
+http\://repo.bukkit.org/content/groups/public/.error=
+http\://repo.bukkit.org/content/repositories/snapshots/.error=
+default-http\://localhost\:8081/nexus/content/repositories/releases/.lastUpdated=1372747050105
+http\://repo.bukkit.org/content/groups/public/.lastUpdated=1372777304806
+http\://localhost\:8081/nexus/content/repositories/releases/.error=Could not transfer artifact com.garbagemule.MobArena\:MobArena\:pom\:0.94.4.91 from/to releases (http\://localhost\:8081/nexus/content/repositories/releases)\: Connection to http\://localhost\:8081 refused

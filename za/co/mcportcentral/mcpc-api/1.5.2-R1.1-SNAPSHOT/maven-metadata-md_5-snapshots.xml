@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>za.co.mcportcentral</groupId>
+  <artifactId>mcpc-api</artifactId>
+  <version>1.5.2-R1.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20130625.013809</timestamp>
+      <buildNumber>4</buildNumber>
+    </snapshot>
+    <lastUpdated>20130625013809</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.5.2-R1.1-20130625.013809-4</value>
+        <updated>20130625013809</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.5.2-R1.1-20130625.013809-4</value>
+        <updated>20130625013809</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

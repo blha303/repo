@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Jul 02 01:54:19 PDT 2013
+gitdescribe-maven-plugin-1.3.jar>sonatype-oss-public=
+gitdescribe-maven-plugin-1.3.pom>sonatype-oss-public=
+gitdescribe-maven-plugin-1.3.jar>bukkit-plugins=
+gitdescribe-maven-plugin-1.3.pom>bukkit-plugins=

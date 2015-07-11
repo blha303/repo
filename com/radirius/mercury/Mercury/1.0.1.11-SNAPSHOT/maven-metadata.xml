@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.radirius.mercury</groupId>
+  <artifactId>Mercury</artifactId>
+  <version>1.0.1.11-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20150228.060649</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20150228060649</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.0.1.11-20150228.060649-1</value>
+        <updated>20150228060649</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0.1.11-20150228.060649-1</value>
+        <updated>20150228060649</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

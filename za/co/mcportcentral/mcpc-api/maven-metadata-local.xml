@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>za.co.mcportcentral</groupId>
+  <artifactId>mcpc-api</artifactId>
+  <versioning>
+    <versions>
+      <version>1.5.2-R1.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20130627163958</lastUpdated>
+  </versioning>
+</metadata>

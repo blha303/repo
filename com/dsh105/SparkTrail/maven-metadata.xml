@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.dsh105</groupId>
+  <artifactId>SparkTrail</artifactId>
+  <versioning>
+    <versions>
+      <version>3.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20140830233220</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.radirius.mercury</groupId>
+  <artifactId>Mercury</artifactId>
+  <versioning>
+    <release>1.0.1.11-dev</release>
+    <versions>
+      <version>1.0.1.11-dev</version>
+      <version>1.0.1.11-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20150228060650</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+  <groupId>net.md-5</groupId>
+  <artifactId>ForgeAPI</artifactId>
+  <version>1.5.2-7.8.0-SNAPSHOT</version> <!-- ${minecraft.version}-${forge.mainversion}-SNAPSHOT -->
+  <name>ForgeAPI</name>
+  <packaging>jar</packaging>
+  <url>https://github.com/agaricusb/ForgeAPI</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <minecraft.version>1.5.2</minecraft.version>
+    <minecraft_version>1_5_2</minecraft_version>
+    <forge.majorversion>7</forge.majorversion>
+    <forge.minorversion>8</forge.minorversion>
+    <forge.revisionversion>0</forge.revisionversion>
+    <forge.build>703</forge.build>
+    <forge.mainversion>${forge.majorversion}.${forge.minorversion}.${forge.revisionversion}</forge.mainversion>
+    <forge.version>${forge.mainversion}.${forge.build}</forge.version>
+    <forgemodparent.revision>R3</forgemodparent.revision> <!-- increment when this parent pom is updated -->
+    <fml.at>https://raw.github.com/MinecraftForge/FML/00f00b17bf0da262e6fe3e327ca2deedf7146305/common/fml_at.cfg</fml.at>
+    <forge.at>https://raw.github.com/MinecraftForge/MinecraftForge/cd40aba38e9b6d2753faa6b4dc8d083dc753b0de/common/forge_at.cfg</forge.at>
+    <mcp.mappings>https://raw.github.com/MinecraftForge/FML/00f00b17bf0da262e6fe3e327ca2deedf7146305/conf/</mcp.mappings>
+    <reobf.mappings>https://raw.github.com/agaricusb/MinecraftRemapping/c71945e6f89bf00a1ce3e3929ce07c019b19fc0e/1.5.2/pkgmcp2numpkg.srg</reobf.mappings>
+    <mod.at></mod.at> <!-- optional access transformer if required by the mod -->
+    <forge.suffix></forge.suffix> <!-- set for modified versions of forge (coremods) -->
+  </properties>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>sonatype-oss-public</id>
+      <url>https://oss.sonatype.org/content/groups/public</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+  <dependencies>
+    <dependency>
+        <groupId>org.ow2.asm</groupId>
+        <artifactId>asm-all</artifactId>
+        <version>4.1</version>
+    </dependency>
+    <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>14.0-rc3</version>
+    </dependency>
+    <dependency>
+        <groupId>org.lwjgl.lwjgl</groupId>
+        <artifactId>lwjgl</artifactId>
+        <version>2.8.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.lwjgl.lwjgl</groupId>
+        <artifactId>lwjgl_util</artifactId>
+        <version>2.8.4</version>
+    </dependency>
+    <dependency>
+        <groupId>net.sourceforge.argo</groupId>
+        <artifactId>argo</artifactId>
+        <version>3.2</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+            <groupId>net.md-5</groupId>
+            <artifactId>specialsource-maven-plugin</artifactId>
+            <version>1.1-SNAPSHOT</version>
+            <executions>
+                <execution>
+                    <id>build-remapped-forge</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>install-remapped-file</goal> <!-- actually, attaches artifact instead of installing -->
+                    </goals>
+                    <configuration>
+                        <groupId>net.minecraftforge</groupId>
+                        <artifactId>minecraft-forge</artifactId>
+                        <version>${forge.version}-${forgemodparent.revision}${forge.suffix}</version>
+                        <inJars>
+                            <param>http://assets.minecraft.net/${minecraft_version}/minecraft_server.jar</param>
+                            <param>http://assets.minecraft.net/${minecraft_version}/minecraft.jar</param>
+                            <param>http://files.minecraftforge.net/minecraftforge/minecraftforge-universal-${minecraft.version}-${forge.version}.zip</param>
+                        </inJars>
+                        <srgIn>${mcp.mappings}</srgIn> <!-- obf -> mcp csvnames for development -->
+                        <accessTransformers>
+                            <param>${fml.at}</param>
+                            <param>${forge.at}</param>
+                            <param>pattern:*-synthetic **</param> <!-- magic -->
+                            <param>${mod.at}</param> <!-- optional AT from mod itself -->
+                        </accessTransformers>
+                        <generateAPI>true</generateAPI>
+                        <installArtifact>false</installArtifact>
+                        <replaceMainArtifact>true</replaceMainArtifact>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+  </build>
+</project>

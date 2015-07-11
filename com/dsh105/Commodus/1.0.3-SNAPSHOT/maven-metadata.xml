@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.dsh105</groupId>
+  <artifactId>Commodus</artifactId>
+  <version>1.0.3-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20141230.110836</timestamp>
+      <buildNumber>8</buildNumber>
+    </snapshot>
+    <lastUpdated>20141230110836</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0.3-20141230.110836-8</value>
+        <updated>20141230110836</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.0.3-20141213.044410-7</value>
+        <updated>20141213044410</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>javadoc</classifier>
+        <extension>jar</extension>
+        <value>1.0.3-20141230.110836-8</value>
+        <updated>20141230110836</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>me.FurH.Core</groupId>
+  <artifactId>FCoreLib</artifactId>
+  <versioning>
+    <versions>
+      <version>0.6.2-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20130710202006</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.dsh105</groupId>
+  <artifactId>DSHUtils</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+      <version>1.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20140930071054</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>net.md-5</groupId>
+  <artifactId>Spigot</artifactId>
+  <versioning>
+    <versions>
+      <version>1.6.2-R0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20130709095702</lastUpdated>
+  </versioning>
+</metadata>

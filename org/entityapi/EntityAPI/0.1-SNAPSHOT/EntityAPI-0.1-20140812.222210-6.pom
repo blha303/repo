@@ -1,0 +1,162 @@
+<!--
+  ~ Copyright (C) EntityAPI Team
+  ~
+  ~ This file is part of EntityAPI.
+  ~
+  ~ EntityAPI is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ EntityAPI is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with EntityAPI.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>EntityAPI</artifactId>
+    <name>EntityAPI</name>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <parent>
+        <groupId>org.entityapi</groupId>
+        <artifactId>EntityAPI-Parent</artifactId>
+        <version>parent</version>
+        <relativePath>../../</relativePath>
+    </parent>
+
+    <dependencies>
+        <!-- 1.7.2 Module -->
+        <dependency>
+            <groupId>org.entityapi</groupId>
+            <artifactId>EntityAPI-v1_7_R1</artifactId>
+            <version>v1_7_R1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.bukkit</groupId>
+                    <artifactId>craftbukkit</artifactId>
+                </exclusion>
+            </exclusions>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- API Module -->
+        <dependency>
+            <groupId>org.entityapi</groupId>
+            <artifactId>EntityAPI-API</artifactId>
+            <version>API</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.bukkit</groupId>
+                    <artifactId>bukkit</artifactId>
+                </exclusion>
+            </exclusions>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <directory>../../target</directory>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <finalName>${project.name}</finalName>
+
+        <resources>
+            <resource>
+                <targetPath>.</targetPath>
+                <filtering>true</filtering>
+                <directory>../../src/main/resources/</directory>
+                <includes>
+                    <include>*.yml</include>
+                </includes>
+            </resource>
+        </resources>
+
+        <plugins>
+            <!-- Jar Filler -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.1</version>
+                <configuration>
+                    <archive>
+                        <manifestEntries>
+                            <Plugin-Version>${project.version}</Plugin-Version>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <!-- Clean up -->
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <configuration>
+                    <excludeDefaultDirectories>true</excludeDefaultDirectories>
+                    <filesets>
+                        <fileset>
+                            <directory>target</directory>
+                            <includes>
+                                <include>**/*</include>
+                            </includes>
+                        </fileset>
+                    </filesets>
+                </configuration>
+                <version>2.5</version>
+            </plugin>
+
+            <!-- Shade -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <minimizeJar>true</minimizeJar>
+                            <createDependencyReducedPom>false</createDependencyReducedPom>
+                            <filters>
+                                <filter>
+                                    <artifact>org.entityapi:EntityAPI*</artifact>
+                                    <includes>
+                                        <include>**</include>
+                                    </includes>
+                                </filter>
+                            </filters>
+                            <artifactSet>
+                                <includes>
+                                    <include>org.entityapi:EntityAPI*</include>
+                                    <include>com.captainbern:Minecraft-Reflection</include>
+                                    <include>com.dsh105:Commodus</include>
+                                </includes>
+                            </artifactSet>
+                            <relocations>
+                                 <relocation>
+                                     <pattern>com.dsh105*</pattern>
+                                     <shadedPattern>org.entityapi.libs.dsh105</shadedPattern>
+                                 </relocation>
+                                 <relocation>
+                                     <pattern>com.captainbern*</pattern>
+                                     <shadedPattern>org.entityapi.libs.captainbern</shadedPattern>
+                                 </relocation>
+                             </relocations>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.captainbern</groupId>
+  <artifactId>Reflection-Framework</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20150119.223516</timestamp>
+      <buildNumber>28</buildNumber>
+    </snapshot>
+    <lastUpdated>20150119223516</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0-20150119.223516-28</value>
+        <updated>20150119223516</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

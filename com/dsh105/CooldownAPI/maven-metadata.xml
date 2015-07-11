@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.dsh105</groupId>
+  <artifactId>CooldownAPI</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20141125104243</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>net.minecraftforge</groupId>
+  <artifactId>minecraft-forge</artifactId>
+  <versioning>
+    <release>7.8.1.738-R3-MCPC</release>
+    <versions>
+      <version>7.8.1.738-R3-MCPC</version>
+    </versions>
+    <lastUpdated>20130628032509</lastUpdated>
+  </versioning>
+</metadata>
